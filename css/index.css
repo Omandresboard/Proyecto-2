@@ -1,0 +1,150 @@
+/* SECCION DEL INICIO DE LA PAGINA */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 80px;
+}
+
+span{
+    color: rgb(255, 255, 255);
+}
+
+.custom-width-form {
+    width: 60vw; 
+    margin: auto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#bannerCarousel{
+    width: 95%;
+    margin: auto;
+}
+
+#bannerCarousel img {
+    object-fit: cover;
+    height: 100vh;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;    
+    gap: 25px;
+    background-color: rgb(238, 238, 238);
+}
+
+.categories{
+    width: 80%;
+    gap: 45px;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 5px 10px 25px 10px;
+}
+
+.card{
+    flex: 0 0 20rem;
+    margin-right: 10px;
+}
+
+
+.categories button{
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+}
+
+
+.categories button:hover{
+    background-color: black;
+    color: #fff;
+    transition: .3s;
+}
+
+.accordion{
+    width: 80%;
+    margin: auto;
+}
+
+.accordion img{
+    width: 250px;
+}
+
+.accordion .card{
+    border: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px; 
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: rgb(187, 187, 187);
+}
+
+footer{
+    height: 15%;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.icons {
+    width: 10%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.icons a{
+    text-decoration: none;
+}
+
+.icons a i{
+    display: flex;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+@media (min-width: 1890px) {
+    .categories{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 520px) {
+    .accordion .card{
+        flex-direction: column;
+    }
+    .accordion img{
+        width: 100% ;
+    }
+    .accordion .card .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
