@@ -1,0 +1,9 @@
+#bannerCarousel{
+    width: 95%;
+    margin: auto;
+}
+
+#bannerCarousel img {
+    object-fit: cover;
+    height: 100vh;
+}
