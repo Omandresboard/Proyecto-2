@@ -1,0 +1,43 @@
+.products{
+    display: flex;
+    flex-direction: column;    
+    gap: 25px;
+    background-color: rgb(238, 238, 238);
+}
+
+.categories{
+    width: 90%;
+    gap: 45px;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 5px 10px 25px 10px;
+}
+
+.card{
+    flex: 0 0 20rem;
+    margin-right: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px; 
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: rgb(187, 187, 187);
+}
+
+@media (min-width: 1790px) {
+    .categories{
+        justify-content: center;
+    }
+    .col{
+        justify-content: center;
+    }
+}
+

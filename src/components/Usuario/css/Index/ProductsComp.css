@@ -1,0 +1,75 @@
+.pad{
+    padding: 55px;
+}
+
+.container-fluid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.producto{
+    height: 370px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    background-color: rgb(244, 244, 244);
+    padding: 15px;
+    transition: .2s;
+}
+
+.producto img{
+    width: 270px;
+    height: 210px;
+}
+
+.producto:hover{
+    box-shadow: 0.3rem 1rem 0.8rem rgba(0,0,0, 0.1);
+}
+
+.textos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width:815px) {
+    .producto{
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .producto img{
+        width: 180px;
+        height: 120px;
+        align-items: center;
+    }
+    
+    .textos{
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 575px) {
+    .pad{
+        padding: 55px 5px 55px 5px;
+    }
+    .producto img{
+        width: 90px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 455px) {
+    .pad{
+        padding: 55px 5px 55px 5px;
+    }
+    .producto img{
+        width: 40px;
+        height: 30px;
+    }
+}
